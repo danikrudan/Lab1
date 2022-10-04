@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int k ;
+    printf("input meaning k=");
+    scanf("%d" , &k );
+    if(k%2 == 0)
+        printf("count", k);
+    else
+        printf("uncount", k);
+
+
+
+    return 0;
+}
