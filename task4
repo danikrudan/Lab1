@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main() {
+    char l[10];
+    char winter[10] = {'W', 'i', 'n', 't', 'e', 'r'};
+    char spring[10] = {'S', 'p', 'r', 'i', 'n', 'g'};
+    char summer[10] = {'S', 'u', 'm', 'm', 'e', 'r'};
+    char autumn[10] = {'A', 'u', 't', 'u', 'm', 'n'};
+    int time = 1;
+    printf("Select (Winter,Spring,Summer,Autumn)\n");
+    scanf("%s", &l);
+    for (int i = 0; i < 7; i++) {
+        if (l[i] == winter[i]) {
+
+        } else {
+            time = 0;
+            break;
+        }
+    }
+    if (time == 1) {
+        printf("December\nJanuary\nFebruary\n");
+        return 0;
+    }
+    time = 1;
+    for (int i = 0; i < 7; i++) {
+        if (l[i] == spring[i]) {
+
+        } else {
+            time = 0;
+            break;
+        }
+    }
+    if (time == 1) {
+        printf("March\nApril\nMay\n");
+        return 0;
+    }
+    time = 1;
+    for (int i = 0; i < 7; i++) {
+        if (l[i] == summer[i]) {
+
+        } else {
+            time = 0;
+            break;
+        }
+    }
+    if (time == 1) {
+        printf("June\nJuly\nAugust\n");
+        return 0;
+    }
+    time = 1;
+    for (int i = 0; i < 7; i++) {
+        if (l[i] == autumn[i]) {
+
+        } else {
+             time= 0;
+            break;
+        }
+    }
+    if (time == 1) {
+        printf("September\nOctober\nNovember\n");
+        return 0;
+    }
+    return 0;
+}
