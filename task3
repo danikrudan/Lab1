@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int func(float m, float n) {
+    return m * n == 1.0f;}
+
+
+int main() {
+    float a, b, c;
+    int res;
+
+    printf("input meaning (a, b, c): ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    res = func(a, b) + func(a, c) + func(b, c);
+
+    printf("result = %d\n", res);
+
+    return 0;
+}
