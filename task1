@@ -1,15 +1,15 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main() {
-    int k ;
-    printf("input meaning k=");
-    scanf("%d" , &k );
-    if(k%2 == 0)
-        printf("count", k);
-    else
-        printf("uncount", k);
 
+   float p = 3.14 ;
+   float s , r , v ;
 
+    printf("radius=");
+    scanf("%f", &r);
+    v = 4 / 3 * p * r * r * r;
+    s = 4 * r * r * p;
+    printf("s=%.2f\n" , s);
+    printf("v=%.2f\n" , v);
 
     return 0;
 }
